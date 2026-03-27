@@ -57,6 +57,7 @@ body {
     max-width: 95vw;
     max-height: calc(100dvh - 90px);
     perspective: 2500px;
+    touch-action: manipulation;
 }
 
 .sheet {
