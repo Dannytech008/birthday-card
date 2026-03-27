@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Birthday Flip Card</title>
+        <link rel="stylesheet" href="birthday-flip-card.css" />
+    </head>
+    <body>
+        <div class="hover-text">Click pages to flip</div>
+
+        <div class="card-book" id="cardBook">
+            <div class="sheet sheet-1" data-sheet="1">
+                <div class="page page-front cover-page">
+                    <div class="cover-glow"></div>
+                    <h1 class="cover-title">Birthday Magic</h1>
+                    <p class="cover-subtitle">A little sparkle, a lot of love</p>
+
+                    <div class="cover-shape-large">
+                        <div class="shape-diamond"></div>
+                        <div class="shape-block">
+                            <div class="cake">
+                                <div class="layer layer-bottom"></div>
+                                <div class="layer layer-middle"></div>
+                                <div class="layer layer-top"></div>
+                                <div class="icing"></div>
+                                <div class="drip drip1"></div>
+                                <div class="drip drip2"></div>
+                                <div class="drip drip3"></div>
+                                <div class="candle">
+                                    <div class="flame"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page page-back inside-page">
+                    <h2 class="page-heading">Happy Birthday!</h2>
+                    <p>Your first digital birthday card! 🎂</p>
+                    <p>Another year older, another year wiser.</p>
+                    <p>Age gracefully, live fully, and smile often! 😊</p>
+                    <p>May your day be filled with joy and laughter! 🎊</p>
+                </div>
+            </div>
+
+            <div class="sheet sheet-2" data-sheet="2">
+                <div class="page page-front inside-page">
+                    <!-- Edit only the name between this span tag -->
+                    <h2 class="big-birthday">HAPPY BIRTHDAY <span class="editable-name"></span>DANNY!</h2>
+                    <p class="signature-text">This is your first digital birthday card developed by Danny just for you.</p>
+                    <p class="signature-text">Enjoy and have a blast.</p>
+                    <p class="signature-text">WhatsApp: +254742709425</p>
+                </div>
+
+                <div class="page page-back final-page">
+                    <h2 class="page-heading">With Love</h2>
+                    <p>Wishing you a beautiful year ahead full of blessings and smiles.</p>
+                    <p class="tiny-note">Tap a page again to close it.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="birthday-flip-card.js"></script>
+    </body>
+</html>
