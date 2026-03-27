@@ -25,7 +25,8 @@ body {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     font-family: 'Roboto', sans-serif;
     display: grid;
     place-items: center;
@@ -53,6 +54,8 @@ body {
     position: relative;
     width: 430px;
     height: 560px;
+    max-width: 95vw;
+    max-height: calc(100dvh - 90px);
     perspective: 2500px;
 }
 
@@ -156,6 +159,7 @@ body {
     color: var(--ink);
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 241, 248, 0.95));
+    overflow-y: auto;
 }
 
 .inside-page p,
@@ -343,9 +347,29 @@ body {
 }
 
 @media (max-width: 560px) {
+    body {
+        align-items: start;
+        padding: 64px 10px 16px;
+    }
+
+    .hover-text {
+        top: 14px;
+        font-size: 1rem;
+    }
+
     .card-book {
-        width: 95vw;
-        height: 78vh;
+        width: min(95vw, calc((100dvh - 110px) * 0.768));
+        height: calc(min(95vw, calc((100dvh - 110px) * 0.768)) * 1.3023);
+        max-height: calc(100dvh - 110px);
+    }
+
+    .page {
+        border-width: 7px;
+    }
+
+    .inside-page,
+    .final-page {
+        padding: 16px 14px;
     }
 
     .cover-title {
@@ -355,5 +379,11 @@ body {
     .big-birthday,
     .page-heading {
         font-size: 1.5rem;
+    }
+
+    .inside-page p,
+    .final-page p,
+    .signature-text {
+        font-size: 0.94rem;
     }
 }
